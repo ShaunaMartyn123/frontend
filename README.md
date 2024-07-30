@@ -10,9 +10,9 @@ This is the frontend of the URL Shortener application that allows users to short
 
 ## Technologies Used
 - **Frontend**: React
-- **Backend**: Spring Boot (not covered in this README)
-- **Database**: PostgreSQL (not covered in this README)
-- **Containerization**: Docker (not covered in this README)
+- **Backend**: Spring Boot
+- **Database**: PostgreSQL
+- **Containerization**: Docker
 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your machine:
