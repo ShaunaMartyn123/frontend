@@ -45,6 +45,28 @@ Before you begin, ensure you have the following installed on your machine:
     npm start
     ```
 
+## Adjusting API Endpoints
+
+To ensure the frontend communicates correctly with the backend, you need to update the API endpoints in your frontend code to match the URL created by the backend container. 
+
+For example, if your backend container is running on port `54961`, update the API endpoints as follows:
+
+1. Open the files where API calls are made, such as `src/components/UrlForm.js` and `src/components/UrlList.js`.
+
+2. Replace the default localhost URL with the correct port for your backend container. 
+
+For example, in `src/components/UrlForm.js`:
+
+```javascript
+try {
+    const response = await axios.post('http://localhost:54961/api/urls', null, { params: { originalUrl } });
+    onShorten(response.data);
+    setOriginalUrl('');
+    setError('');
+} catch (error) {
+    setError('Failed to shorten the URL');
+}
+
 ## Usage
 
 1. **Access the application:**
