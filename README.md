@@ -65,7 +65,7 @@ try {
     setError('');
 } catch (error) {
     setError('Failed to shorten the URL');
-}
+} ```
 
 ## Usage
 
